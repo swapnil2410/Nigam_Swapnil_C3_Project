@@ -71,6 +71,15 @@ public class Restaurant {
     public String getName() {
         return name;
     }
+    public Double getTotalCost(List<String> items) {
+
+        Double totalCost = 0.0;
+
+        return totalCost;
+    }
+
+
+
 
 
 }

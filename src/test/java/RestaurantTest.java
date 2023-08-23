@@ -70,6 +70,15 @@ class RestaurantTest {
 
 		assertThrows(itemNotFoundException.class, () -> restaurant.removeFromMenu("French fries"));
 	}
+	@Test
+	public void selected_items_from_menu_should_return_total_cost() {
 
+		List<String> itemNameList = new ArrayList<String>();
+		itemNameList.add("Sweet corn soup");
+		itemNameList.add("Vegetable lasagne");
+
+		assertEquals(388, restaurant.getTotalCost(itemNameList));
+
+	}
 }
 	// <<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>}
